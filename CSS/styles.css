@@ -1,0 +1,319 @@
+/* CSS Reset */
+body, header, nav, main, footer, h1, h2, h3, h4, div, img, ul, figure, figcaption, section, article, aside, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Style rules for box sizing applies to all elements */
+* {
+    box-sizing: border-box;
+}
+
+/* Style rule for all lists */
+ul {
+    list-style: none;
+}
+
+/* Adjust paragraph with for events */
+.row p {
+    max-width: 400px;
+}
+
+/* Style rules for body, images, and videos */
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #000;
+}
+
+h1, p, a, h2, h3, h4 {
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+img, video {
+    max-width: 100%;
+    display: block;
+}
+
+/* Show mobile class, hide tablet-desktop class */
+.mobile {
+    display: block;
+}
+
+.tablet-desktop {
+    display: none;
+}
+
+.tablet-desktop-nav {
+    display: none;
+}
+
+/* Style rules for mobile viewport */
+
+/* Navigation Bar */
+#navContainer {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 1.3em;
+}
+
+#headerLogo {
+    font-size: 2em;
+    font-family: "Great Vibes", cursive, sans-serif;
+    color: white;
+}
+
+#menuIcon {
+    font-size: 2em; 
+    color: white; 
+    cursor: pointer;
+    margin-left: auto;
+    line-height: 1; 
+}
+
+#menu-links {
+    text-align: center;
+    margin: 0 auto;
+    width: 75%;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: .5em;
+
+}
+
+#menu-links a {
+    color: white;
+    display: block;
+    font-size: 1.7em;
+    margin: .3em 0;
+}
+
+/* Main content */
+main {
+    margin-bottom: 5%;
+}
+
+.mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4%;
+}
+
+.mobile h2 {
+    text-align: center;
+    font-size: 1.4em;
+}
+
+.mobile p {
+    text-align: center;
+}
+
+.view-button {
+    font-family: "Great Vibes", cursive, sans-serif;
+    border: solid 2px white;
+    border-radius: 8px;
+    padding: 13px;
+    margin: 12px 0;
+    font-size: 1.5em;
+}
+
+.grid-header-text {
+    font-size: 2em;
+}
+
+.mobile hr {
+    width: 100%;
+}
+
+.items-grid {
+    display: grid;
+    grid-template-columns: auto;
+}
+
+.item {
+    text-align: center;
+    border: solid 2px white;
+    border-radius: 8px;
+    padding: 1.5em;
+    width: 100%;
+    max-width: 450px;
+    margin-top: 2em;
+}
+
+.item img, .item video {
+    border-radius: 8px;
+}
+
+
+
+
+
+/* Style rules for footer content */
+footer {
+    font-size: 0.75em;
+    text-align: center;
+    color: white;
+    width: 100%;
+}
+
+footer p, footer a {
+    color: #fff;
+}
+
+
+
+/* Media Query for Tablet Viewport */
+@media screen and (min-width: 630px) {
+
+    /* Tablet-Desktop Viewport: Show tablet-desktop class, hide mobile class */
+    .tablet-desktop {
+        display: block;
+    }
+
+    .tablet-desktop-nav {
+        display: block;
+    }
+
+    .mobile, .mobile-nav {
+        display: none;
+    }
+
+    /* Tablet-Desktop Viewport: Navigation */
+    #navContainer {
+        display: block;
+    }
+
+    #headerLogo {
+        font-size: 3em;
+        text-align: center;
+        margin-bottom: .5em;
+    }
+
+    nav {
+        width: 75%;
+        max-width: 550px;
+        margin: 0 auto 1em auto;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    nav a {
+        font-size: 1.5em;
+        color: white;
+        transition-duration: .3s;
+    }
+
+    nav a:hover {
+        font-size: 1.7em;
+        text-decoration: underline;
+    }
+
+    /* Tablet-Desktop viewport: Main */
+    main .tablet-desktop {
+        text-align: center;
+    }
+
+    .section-container h2 {
+        font-size: 2em;
+    }
+
+    .section-container p {
+        font-size: 1.2em;
+    }
+
+    .text-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5%;
+        width: 75%;
+        margin: 0 auto;
+    }
+
+    .view-button-container {
+        width: 75%;
+
+    }
+
+    .view-button {
+        font-family: "Great Vibes", cursive, sans-serif;
+        font-size: 2em;
+        padding: 20px;
+        display: block;
+        transition-duration: .5s;
+        border: solid 2px white;
+        border-radius: 8px;
+    }
+
+    .view-button:hover {
+        -webkit-box-shadow: #FFF 0 -1px 8px, #ff0 0 -2px 10px, #ff8000 0 -10px 20px, red 0 -18px 40px, 5px 5px 15px 5px rgba(0,0,0,0); 
+        box-shadow: #FFF 0 -1px 8px, #ff0 0 -2px 10px, #ff8000 0 -10px 20px, red 0 -18px 40px, 5px 5px 15px 5px rgba(0,0,0,0);
+    }
+
+    .tablet-desktop-grid-container {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .items-grid {
+        display: grid;
+        grid-template-columns: auto;
+        grid-gap: 20px;
+        justify-items: center; 
+        align-items: center; 
+    }
+
+    .item h3 {
+        font-size: 3em;
+    }
+
+    .item p {
+        font-size: 1.5em;
+    }
+
+}
+
+/* Media Query to add columns to menu items */
+@media screen and (min-width: 1150px) {
+    .items-grid {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 20px;
+        justify-items: center; 
+        align-items: center; 
+    }
+
+    .item h3 {
+        font-size: 1.7em;
+    }
+
+    .item p {
+        font-size: 1em;
+    }
+}
+
+
+/* Media Query for Large Desktop Viewports */
+@media screen and (min-width: 1500px) {
+    #container {
+        width: 1500px;
+        margin: 0 auto;
+
+    }
+
+        
+}
+
+
+

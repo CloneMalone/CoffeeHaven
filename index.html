@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Haven | Home</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- My Stylesheet -->
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+
+<body>
+
+    <div id="container">
+
+        <!-- Mobile Nav -->
+        <div class="mobile-nav">
+            <div id="navContainer">
+                <a href="index.html">
+                    <h1 id="headerLogo">Coffee Haven &#9749;</h1>
+                </a>
+                <nav class="mobile-nav">
+                    <a id="menuIcon" onclick="hamburger()">
+                        <div>&#9776;</div>
+                    </a>
+                </nav>
+            </div>
+            <div id="menu-links">
+                <a href="index.html">Home</a>
+                <a href="events.html">Events</a>
+                <a href="menu.html">Menu</a>
+                <a href="projects.html">Projects</a>
+            </div>
+        </div>
+
+
+        <!-- Tablet, Desktop nav -->
+        <nav class="tablet-desktop-nav">
+            <h1 id="headerLogo">Coffee Haven &#9749;</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="projects.html">Projects</a></li>
+            </ul>
+        </nav>
+
+        <!-- Hero Video -->
+        <video autoplay loop>
+            <source id="vid-src" src="Videos/Coffee_Home_Page.mp4" type="video/mp4">
+            <p>Your browser does not support the video element.</p>
+        </video>
+
+        <!-- Main content -->
+        <main>
+
+            <div class="mobile">
+
+                <h2>Welcome to your favorite coffee house.</h2>
+                <p>Coffee Haven provides a <strong>safe space</strong>, offers many <strong>delicious</strong> menu items, and will <strong>calm your soul</strong>.</p>
+                <a id="viewMenuButton" href="menu.html">View Menu</a>
+
+            </div>
+
+            <div class="tablet-desktop">
+
+                <section class="section-container">
+                    <div class="text-container">
+                        <h2>Welcome to your favorite coffee house.</h2>
+                        <p>Coffee Haven provides a <strong>safe space</strong>, offers many <strong>delicious</strong> menu items, and will <strong>calm your soul</strong>.</p>
+                        <div class="view-button-container">
+                            <a class="view-button" onmouseleave="viewMenuButtonMouseLeave()" onmouseover="viewMenuButtonMouseOver()" id="viewMenuButtonDesktop" href="menu.html">View Menu</a>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section-container">
+                    <img src="Images/Coffee_Menu_Photo.jpg" alt="cup of coffee and book">
+                </section>
+
+                <section class="section-container">
+                    <div class="text-container">
+                        <h2>A chance to have fun and create connections.</h2>
+                        <p>We host multiple <span class="bold">events</span>, that way you can <span class="bold">meet others</span> and foster lasting business relationships.</p>
+                        <div class="view-button-container">
+                            <a class="view-button" href="events.html">Events</a>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section-container">
+                    <img src="Images/Coffee_Events_Photo.jpg" alt="people shaking hands and drinking coffee">
+                </section>
+
+            </div>
+
+        </main>
+
+    </div>
+
+
+    <!-- Footer content -->
+    <footer>
+        <p>&copy; Copyright 2024. All Rights Reserved.</p>
+        <p><a href="mailto:benjamin.terzic@southeasttech.edu">benjamin.terzic@southeasttech.edu</a></p>
+    </footer>
+
+    <!-- Javascript file link -->
+    <script src="Scripts/script.js"></script>
+</body>
+
+</html>
